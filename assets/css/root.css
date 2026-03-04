@@ -1,0 +1,17 @@
+:root {
+  --spaceXs: 10px;
+  --spaceSm: 20px;
+  --spaceSmmd: 35px;
+  --spaceMd: 50px;
+  --spaceLg: 65px;
+  --mainBrandColour: #C62828;
+  --bgColour1: #F5F5F5;
+  --bgColour2: #111111;
+  --bgColour3: #2B2B2B;
+  --textColour1: #FFFFFF;
+  --textColour2: #111111;
+  --maxW: 80rem;
+  --sectionPadding: clamp(5rem, 8vw, 7rem) 1rem;
+  --headerFont: "Oswald", system-ui, sans-serif;
+  --bodyFont: "Inter", system-ui, sans-serif;
+}
