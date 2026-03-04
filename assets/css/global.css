@@ -253,7 +253,7 @@ h3 {
   background: transparent;
   z-index: 1000;
   color: #fff;
-  padding: 0.5rem 2rem;
+  padding: 0.8rem 2rem;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -268,6 +268,14 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  max-width: var(--maxW);
+  margin: auto;
+}
+
+.nav-and-button-con {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .nav1-inner {
@@ -425,8 +433,9 @@ h3 {
   color: white;
   border-radius: 2px;
   text-decoration: none;
-  font-size: 1.2rem;
-  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  font-family: var(--headerFont);
 }
 
 /* Desktop Styles */
@@ -444,7 +453,7 @@ h3 {
 
   .nav1-ul {
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 0;
   }
 
@@ -512,10 +521,8 @@ h3 {
 #site-footer {
   color: var(--textColour1);
   padding: 2.5rem 1rem;
-  border-top: 1px solid #1a1a1a;
-  border-radius: 0 0 10px 10px;
-  max-width: 1050px;
   margin: 0 auto;
+  background-color: var(--bgColour2);
 }
 
 .footer1-logo {

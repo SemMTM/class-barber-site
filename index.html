@@ -57,38 +57,38 @@
       </a>
 
       <!-- Nav Menu -->
-      <nav class="nav1-nav" role="navigation" aria-label="Primary">
-        <!-- Toggle Button -->
-        <button 
-          class="nav1-toggle" 
-          aria-label="Toggle Navigation"
-          aria-controls="nav-menu"
-          aria-expanded="false"
-          >
-          <div class="nav1-toggle-box">
-            <span class="nav1-line" aria-hidden="true"></span>
-            <span class="nav1-line" aria-hidden="true"></span>
-            <span class="nav1-line" aria-hidden="true"></span>
-          </div>
-        </button>
+      <div class="nav-and-button-con">
+        <nav class="nav1-nav" aria-label="Primary">
+          <!-- Toggle Button -->
+          <button 
+            class="nav1-toggle" 
+            aria-label="Toggle Navigation"
+            aria-controls="nav-menu"
+            aria-expanded="false"
+            >
+            <div class="nav1-toggle-box">
+              <span class="nav1-line" aria-hidden="true"></span>
+              <span class="nav1-line" aria-hidden="true"></span>
+              <span class="nav1-line" aria-hidden="true"></span>
+            </div>
+          </button>
 
-        <div class="nav1-ul-wrapper" id="nav-menu">
-          <ul class="nav1-ul">
-            <!-- Home -->
-            <li><a href="/" class="active" aria-current="page">Home</a></li>
-            <li><a href="/portfolio/">About</a></li>
-            <li><a href="/portfolio/">Services</a></li>
-            <li><a href="/portfolio/">Portfolio</a></li>
-            <li><a href="/contact-us/">Contact</a></li>
-          </ul>
-          <div class="header-btn">
-            <a href="/contact-us/" class="nav1-cta-button" aria-label="Get Started - go to Contact Page">Get Started</a>
+          <div class="nav1-ul-wrapper" id="nav-menu">
+            <ul class="nav1-ul">
+              <!-- Home -->
+              <li><a href="/" class="active" aria-current="page">Home</a></li>
+              <li><a href="/portfolio/">Services</a></li>
+              <li><a href="/portfolio/">Gallery</a></li>
+            </ul>
+            <div class="header-btn">
+              <a href="/contact-us/" class="nav1-cta-button" aria-label="Get Started - go to Contact Page">Visit Us</a>
+            </div>
           </div>
+        </nav>
+
+        <div class="header-btn">
+          <a href="/contact-us/" class="nav1-cta-button sweep-to-top" aria-label="Get Started - go to Contact Page">Visit Us</a>
         </div>
-      </nav>
-
-      <div class="header-btn">
-        <a href="/contact-us/" class="nav1-cta-button sweep-to-top" aria-label="Get Started - go to Contact Page">Get Started</a>
       </div>
     </div>
   </header>
@@ -99,7 +99,48 @@
 
   <!-- Main Content -->
   <main id="main-content" role="main" tabindex="-1">
+    <!-- HERO -->
+  <section id="hero1" aria-labelledby="hero1-heading">
+    <img
+      src="/assets/images/class-barber-interior.webp"
+      alt="Interior of Class Barber barbershop in Plymouth with barber chairs and mirrors"
+      class="hero1-image"
+      width="1920"
+      height="1080"
+      fetchpriority="high"
+      decoding="async"
+    >
+    <div class="container">
+      <div class="hero1-content">
+        <p class="hero1-badge">Open for Walk-ins</p>
+        <h1 id="hero1-heading">Experienced Barbers<br>in Plymouth</h1>
+        <p class="p hero1-text">
+          Class Barber is a professional barbershop located on North Hill in Plymouth,
+          providing modern men’s haircuts, skin fades and beard grooming for over 15 years.
+        </p>
 
+        <div class="hero1-buttons">
+          <a href="#contact" class="cta-button main-btn">Visit Us Today</a>
+          <a href="#services" class="cta-button hero1-ghost-btn">View Services</a>
+        </div>
+
+        <ul class="hero1-meta" aria-label="Key information">
+          <li class="hero1-meta-item">
+            <svg class="icon icon-small" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0-6a10 10 0 1 0 10 10A10 10 0 0 0 12 2Z"/>
+            </svg>
+            <span>Walk-ins only</span>
+          </li>
+          <li class="hero1-meta-item">
+            <svg class="icon icon-small" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"/>
+            </svg>
+            <span>Card payments accepted</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   </main>
 
   <!-- footer1 Components Start -->
