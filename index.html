@@ -1,233 +1,960 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-<head>
-  <!-- Meta -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="dark light"> 
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
 
-  <!-- Primary SEO -->
-  <title>Page Title</title>
-  <meta name="description" content="Page Description">
-  <link rel="canonical" href="Main url">
-  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <!-- Primary SEO -->
+    <title>Page Title</title>
+    <meta name="description" content="Page Description" />
+    <link rel="canonical" href="Main url" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
 
-  <!-- Icons & PWA -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/code-favicon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/sd-favicon.png">
-  <link rel="apple-touch-icon" href="/assets/images/sd-favicon.png">
-  <meta name="theme-color" content="#0A0A0A"> <!-- Set depending on which they have -->
+    <!-- Icons & PWA -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/code-favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/images/sd-favicon.png"
+    />
+    <link rel="apple-touch-icon" href="/assets/images/sd-favicon.png" />
+    <meta name="theme-color" content="#0A0A0A" />
+    <!-- Set depending on which they have -->
 
-  <!-- Global CSS -->
-  <link rel="preload" href="/assets/css/root.css" as="style">
-  <link rel="stylesheet" href="/assets/css/root.css">
-  <link rel="preload" href="/assets/css/global.css" as="style">
-  <link rel="stylesheet" href="/assets/css/global.css">
+    <!-- Global CSS -->
+    <link rel="preload" href="/assets/css/root.css" as="style" />
+    <link rel="stylesheet" href="/assets/css/root.css" />
+    <link rel="preload" href="/assets/css/global.css" as="style" />
+    <link rel="stylesheet" href="/assets/css/global.css" />
 
-  <!-- Page Specific CSS -->
-  <link rel="preload" href="/assets/css/home.css" as="style">
-  <link rel="stylesheet" href="/assets/css/home.css">
+    <!-- Page Specific CSS -->
+    <link rel="preload" href="/assets/css/home.css" as="style" />
+    <link rel="stylesheet" href="/assets/css/home.css" />
 
-  <!-- Fonts -->
-  <link href="/assets/fonts/inter-v19-latin-300.woff2" rel="preload" as="font" 
-  crossorigin type="font/woff2">
-  <link href="/assets/fonts/poppins-v23-latin-600.woff2" rel="preload" as="font" 
-  crossorigin type="font/woff2">
-  <link href="/assets/fonts/poppins-v23-latin-700.woff2" rel="preload" as="font" 
-  crossorigin type="font/woff2">
-  <link href="/assets/fonts/poppins-v23-latin-800.woff2" rel="preload" as="font" 
-  crossorigin type="font/woff2">
+    <!-- Fonts -->
+    <link
+      href="/assets/fonts/inter-v19-latin-300.woff2"
+      rel="preload"
+      as="font"
+      crossorigin
+      type="font/woff2"
+    />
+    <link
+      href="/assets/fonts/poppins-v23-latin-600.woff2"
+      rel="preload"
+      as="font"
+      crossorigin
+      type="font/woff2"
+    />
+    <link
+      href="/assets/fonts/poppins-v23-latin-700.woff2"
+      rel="preload"
+      as="font"
+      crossorigin
+      type="font/woff2"
+    />
+    <link
+      href="/assets/fonts/poppins-v23-latin-800.woff2"
+      rel="preload"
+      as="font"
+      crossorigin
+      type="font/woff2"
+    />
 
-  <!-- Other head and Json data under here -->
+    <!-- Other head and Json data under here -->
+  </head>
 
-</head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Nav1 Component Start -->
+    <!-- Nav1 Component Start -->
 
-<body> 
-  <a href="#main-content" class="skip-link">Skip to main content</a>
-  <!-- Nav1 Component Start -->
-  <!-- Nav1 Component Start -->
+    <!-- Header -->
+    <header id="nav1-navigation">
+      <div class="nav1-container">
+        <!-- Logo -->
+        <a href="/" class="nav1-logo">
+          <span class="visually-hidden">Homepage title for screen readers</span>
+          Company Logo
+        </a>
 
-  <!-- Header -->
-  <header id="nav1-navigation">
-    <div class="nav1-container">
-      <!-- Logo -->
-      <a href="/" class="nav1-logo">
-        <span class="visually-hidden">Homepage title for screen readers</span>
-        Company Logo
-      </a>
-
-      <!-- Nav Menu -->
-      <div class="nav-and-button-con">
-        <nav class="nav1-nav" aria-label="Primary">
-          <!-- Toggle Button -->
-          <button 
-            class="nav1-toggle" 
-            aria-label="Toggle Navigation"
-            aria-controls="nav-menu"
-            aria-expanded="false"
+        <!-- Nav Menu -->
+        <div class="nav-and-button-con">
+          <nav class="nav1-nav" aria-label="Primary">
+            <!-- Toggle Button -->
+            <button
+              class="nav1-toggle"
+              aria-label="Toggle Navigation"
+              aria-controls="nav-menu"
+              aria-expanded="false"
             >
-            <div class="nav1-toggle-box">
-              <span class="nav1-line" aria-hidden="true"></span>
-              <span class="nav1-line" aria-hidden="true"></span>
-              <span class="nav1-line" aria-hidden="true"></span>
-            </div>
-          </button>
+              <div class="nav1-toggle-box">
+                <span class="nav1-line" aria-hidden="true"></span>
+                <span class="nav1-line" aria-hidden="true"></span>
+                <span class="nav1-line" aria-hidden="true"></span>
+              </div>
+            </button>
 
-          <div class="nav1-ul-wrapper" id="nav-menu">
-            <ul class="nav1-ul">
-              <!-- Home -->
-              <li><a href="/" class="active" aria-current="page">Home</a></li>
-              <li><a href="/portfolio/">Services</a></li>
-              <li><a href="/portfolio/">Gallery</a></li>
+            <div class="nav1-ul-wrapper" id="nav-menu">
+              <ul class="nav1-ul">
+                <!-- Home -->
+                <li><a href="/" class="active" aria-current="page">Home</a></li>
+                <li><a href="/portfolio/">Services</a></li>
+                <li><a href="/portfolio/">Gallery</a></li>
+              </ul>
+              <div class="header-btn">
+                <a
+                  href="/contact-us/"
+                  class="nav1-cta-button"
+                  aria-label="Get Started - go to Contact Page"
+                  >Visit Us</a
+                >
+              </div>
+            </div>
+          </nav>
+
+          <div class="header-btn">
+            <a
+              href="/contact-us/"
+              class="nav1-cta-button sweep-to-top"
+              aria-label="Get Started - go to Contact Page"
+              >Visit Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="nav1-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+    <!-- Nav1 Component End -->
+    <!-- Nav1 Component End -->
+
+    <!-- Main Content -->
+    <main id="main-content" role="main" tabindex="-1">
+      <!-- HERO -->
+      <section id="hero1" aria-labelledby="hero1-heading">
+        <img
+          src="/assets/images/class-barber-interior.webp"
+          alt="Interior of Class Barber barbershop in Plymouth with barber chairs and mirrors"
+          class="hero1-image"
+          width="1920"
+          height="1080"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <div class="container">
+          <div class="hero1-content">
+            <p class="hero1-badge">Open for Walk-ins</p>
+            <h1 id="hero1-heading">Experienced Barbers<br />in Plymouth</h1>
+            <p class="p hero1-text">
+              Class Barber is a professional barbershop located on North Hill in
+              Plymouth, providing modern men’s haircuts, skin fades and beard
+              grooming for over 15 years.
+            </p>
+
+            <div class="hero1-buttons">
+              <a href="#contact" class="cta-button main-btn sweep-to-top"
+                >Visit Us Today</a
+              >
+              <a
+                href="#services"
+                class="cta-button hero1-ghost-btn sweep-to-top"
+                >View Services</a
+              >
+            </div>
+
+            <ul class="hero1-meta" aria-label="Key information">
+              <li class="hero1-meta-item">
+                <svg
+                  class="icon icon-small"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0-6a10 10 0 1 0 10 10A10 10 0 0 0 12 2Z"
+                  />
+                </svg>
+                <span>Walk-ins only</span>
+              </li>
+              <li class="hero1-meta-item">
+                <svg
+                  class="icon icon-small"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"
+                  />
+                </svg>
+                <span>Card payments accepted</span>
+              </li>
             </ul>
-            <div class="header-btn">
-              <a href="/contact-us/" class="nav1-cta-button" aria-label="Get Started - go to Contact Page">Visit Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- WHY CHOOSE US -->
+      <section id="why-choose-us" aria-labelledby="why-choose-us-heading">
+        <div class="container">
+          <div class="why-choose-us-layout">
+            <div class="why-choose-us-content">
+              <h2 id="why-choose-us-heading">
+                Professional.<br />Local. Trusted.
+              </h2>
+
+              <div class="why-choose-us-stats">
+                <article class="why-choose-us-stat">
+                  <h3>15+</h3>
+                  <p class="why-choose-us-stat-label">Years Experience</p>
+                  <p>Skilled, trained barbers delivering consistent results.</p>
+                </article>
+
+                <article class="why-choose-us-stat">
+                  <h3>400+</h3>
+                  <p class="why-choose-us-stat-label">Five-Star Reviews</p>
+                  <p>One of the most reviewed barbers in Plymouth.</p>
+                </article>
+              </div>
+
+              <div class="why-choose-us-points">
+                <ul class="why-choose-us-list">
+                  <li>
+                    <svg
+                      class="icon icon-small"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9.55 18.2 4.8 13.45l1.4-1.4 3.35 3.35 8.25-8.25 1.4 1.4Z"
+                      />
+                    </svg>
+                    <span
+                      >Walk-ins only — located on North Hill in Plymouth</span
+                    >
+                  </li>
+
+                  <li>
+                    <svg
+                      class="icon icon-small"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9.55 18.2 4.8 13.45l1.4-1.4 3.35 3.35 8.25-8.25 1.4 1.4Z"
+                      />
+                    </svg>
+                    <span>Student discount available (valid ID required)</span>
+                  </li>
+
+                  <li>
+                    <svg
+                      class="icon icon-small"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9.55 18.2 4.8 13.45l1.4-1.4 3.35 3.35 8.25-8.25 1.4 1.4Z"
+                      />
+                    </svg>
+                    <span>Free cold drinks while you wait</span>
+                  </li>
+
+                  <li>
+                    <svg
+                      class="icon icon-small"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9.55 18.2 4.8 13.45l1.4-1.4 3.35 3.35 8.25-8.25 1.4 1.4Z"
+                      />
+                    </svg>
+                    <span>Up to 2 hours free parking nearby</span>
+                  </li>
+
+                  <li>
+                    <svg
+                      class="icon icon-small"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M9.55 18.2 4.8 13.45l1.4-1.4 3.35 3.35 8.25-8.25 1.4 1.4Z"
+                      />
+                    </svg>
+                    <span>Card payment accepted</span>
+                  </li>
+                </ul>
+
+                <a href="#reviews" class="why-choose-us-link">
+                  Read Our Reviews →
+                </a>
+              </div>
+            </div>
+
+            <div class="why-choose-us-media">
+              <figure class="why-choose-us-image">
+                <img
+                  src="/assets/images/class-barber-skinfade.webp"
+                  alt="Example of a skinfade and hair design completed at Class Barber in Plymouth"
+                  width="547"
+                  height="547"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </figure>
+
+              <aside class="why-choose-us-review">
+                <div class="why-choose-us-stars" aria-hidden="true">★★★★★</div>
+
+                <blockquote>
+                  <p>
+                    "Best barber in Plymouth. Always consistent and
+                    professional."
+                  </p>
+                </blockquote>
+
+                <footer class="why-choose-us-reviewer">
+                  <span class="review-avatar">JD</span>
+                  <span>James D.</span>
+                </footer>
+              </aside>
             </div>
           </div>
-        </nav>
-
-        <div class="header-btn">
-          <a href="/contact-us/" class="nav1-cta-button sweep-to-top" aria-label="Get Started - go to Contact Page">Visit Us</a>
         </div>
-      </div>
-    </div>
-  </header>
-  <div class="nav1-overlay" id="nav-overlay" aria-hidden="true"></div>
+      </section>
 
-  <!-- Nav1 Component End -->
-  <!-- Nav1 Component End -->
+      <!-- SERVICES -->
+      <section id="services" aria-labelledby="services-heading">
+        <div class="container">
+          <header class="services-header">
+            <p class="sub-intro">What We Do</p>
+            <h2 id="services-heading">Our Services</h2>
+            <p style="opacity: 0.8">
+              Modern barbering with precision and attention to detail.
+            </p>
+          </header>
 
-  <!-- Main Content -->
-  <main id="main-content" role="main" tabindex="-1">
-    <!-- HERO -->
-  <section id="hero1" aria-labelledby="hero1-heading">
-    <img
-      src="/assets/images/class-barber-interior.webp"
-      alt="Interior of Class Barber barbershop in Plymouth with barber chairs and mirrors"
-      class="hero1-image"
-      width="1920"
-      height="1080"
-      fetchpriority="high"
-      decoding="async"
-    >
-    <div class="container">
-      <div class="hero1-content">
-        <p class="hero1-badge">Open for Walk-ins</p>
-        <h1 id="hero1-heading">Experienced Barbers<br>in Plymouth</h1>
-        <p class="p hero1-text">
-          Class Barber is a professional barbershop located on North Hill in Plymouth,
-          providing modern men’s haircuts, skin fades and beard grooming for over 15 years.
-        </p>
+          <ul class="services-grid">
+            <li class="service-card">
+              <img
+                src="/assets/images/class-barber-kids-cut2.webp"
+                alt=""
+                width="600"
+                height="420"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                      d="M9.55 18.2 4.8 13.45l1.4-1.4 3.35 3.35 8.25-8.25 1.4 1.4Z"
+                    />
+                  </svg>
+                </span>
+                <h3>Men's Haircuts</h3>
+                <p>
+                  Classic and modern styles tailored to your face shape and hair
+                  type.
+                </p>
+              </div>
+            </li>
 
-        <div class="hero1-buttons">
-          <a href="#contact" class="cta-button main-btn">Visit Us Today</a>
-          <a href="#services" class="cta-button hero1-ghost-btn">View Services</a>
-        </div>
+            <li class="service-card">
+              <img
+                src="/assets/images/class-barber-skinfade1.webp"
+                alt=""
+                width="600"
+                height="420"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M7 7a2 2 0 1 1 4 0 2 2 0 0 1-4 0Z" />
+                  </svg>
+                </span>
+                <h3>Skin Fades</h3>
+                <p>
+                  Sharp, clean fades finished with precision. Our signature
+                  service.
+                </p>
+              </div>
+            </li>
 
-        <ul class="hero1-meta" aria-label="Key information">
-          <li class="hero1-meta-item">
-            <svg class="icon icon-small" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0-6a10 10 0 1 0 10 10A10 10 0 0 0 12 2Z"/>
-            </svg>
-            <span>Walk-ins only</span>
-          </li>
-          <li class="hero1-meta-item">
-            <svg class="icon icon-small" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2Z"/>
-            </svg>
-            <span>Card payments accepted</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  </main>
+            <li class="service-card">
+              <img
+                src="/assets/images/class-barber-hair-design.webp"
+                alt=""
+                width="600"
+                height="420"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12 3a7 7 0 0 0-7 7v2Z" />
+                  </svg>
+                </span>
+                <h3>Beard Shape-Up</h3>
+                <p>
+                  Defined lines and structured grooming to keep your beard
+                  looking its best.
+                </p>
+              </div>
+            </li>
 
-  <!-- footer1 Components Start -->
-  <!-- footer1 Components Start -->
-  <footer id="site-footer" role="contentinfo">
-    <div class="container">
-      <div class="footer1-brand">
-        <h2 class="footer1-logo">
-          Company Logo
-        </h2>
-        <p class="footer1-description">
-          company slogan
-        </p>
-      </div>
+            <li class="service-card">
+              <img
+                src="/assets/images/class-barber-hot-towel.webp"
+                alt=""
+                width="600"
+                height="420"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M7 7h10l1 3Z" />
+                  </svg>
+                </span>
+                <h3>Hot Towel Shave</h3>
+                <p>
+                  A traditional shave with a refreshing mint finish and hot
+                  towel treatment.
+                </p>
+              </div>
+            </li>
 
-      <div class="footer1-columns">
-        <div class="footer1-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href='/'>Home</a></li>
-            <li><a href="/pricing/">Pricing</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/portfolio/">Portfolio</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li class="service-card">
+              <img
+                src="/assets/images/class-barber-kids-cut.webp"
+                alt=""
+                width="600"
+                height="420"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M12 12a3 3 0 1 0-3-3Z" />
+                  </svg>
+                </span>
+                <h3>Kids' Cuts</h3>
+                <p>
+                  Professional service for younger clients. Patient and skilled
+                  barbers.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-card">
+              <img
+                src="/assets/images/class-barber-hair-design2.webp"
+                alt=""
+                width="600"
+                height="420"
+                loading="lazy"
+                decoding="async"
+              />
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <span class="service-card-icon" aria-hidden="true">
+                  <svg class="icon" viewBox="0 0 24 24">
+                    <path d="m19.71 4.29-1-1Z" />
+                  </svg>
+                </span>
+                <h3>Hair Design</h3>
+                <p>
+                  Custom detailing and patterns for a unique, personalized
+                  finish.
+                </p>
+              </div>
+            </li>
           </ul>
         </div>
+      </section>
 
-        <div class="footer1-links">
-          Column for other company specific things such as location maps
+      <!-- PORTFOLIO -->
+      <section id="portfolio" aria-labelledby="portfolio-heading">
+        <div class="container">
+          <header class="portfolio-header">
+            <p class="sub-intro">Portfolio</p>
+            <h2 id="portfolio-heading">See Our Work</h2>
+            <p>Modern cuts. Sharp fades. Clean finishes.</p>
+          </header>
+
+          <div class="portfolio-grid">
+            <figure class="portfolio-item portfolio-item-large">
+              <img
+                src="/assets/images/class-barber-taperfade.webp"
+                alt="Side profile of a finished taper fade"
+                width="900"
+                height="900"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+
+            <figure class="portfolio-item">
+              <img
+                src="/assets/images/class-barber-skinfade2.webp"
+                alt="Finished haircut with detailed fade and hair design"
+                width="450"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+
+            <figure class="portfolio-item">
+              <img
+                src="/assets/images/class-barber-skinfade3.webp"
+                alt="Young client with a neatly styled haircut"
+                width="450"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+
+            <figure class="portfolio-item">
+              <img
+                src="/assets/images/class-barber-skin-fade.webp"
+                alt="Client with a finished haircut and fade inside the shop"
+                width="450"
+                height="450"
+                loading="lazy"
+                decoding="async"
+              />
+            </figure>
+
+            <a
+              class="portfolio-social-card"
+              href="https://instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Follow Class Barber on Instagram"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5Zm5-3.25a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 17 6.25Z"
+                />
+              </svg>
+              <span>Follow Us</span>
+            </a>
+          </div>
+
+          <div class="portfolio-button-wrap">
+            <a
+              href="#contact"
+              class="cta-button sub-btn portfolio-btn sweep-to-top"
+            >
+              View Full Gallery
+            </a>
+          </div>
         </div>
+      </section>
 
-        <div class="footer1-contact">
-          <h3>Contact</h3>
-          <ul>
-            <li>
-              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" focusable="false" aria-hidden="true" height="25" width="25">
-                <path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/>
-              </svg>
-              <a href="mailto:">hello@company.co.uk</a>
+      <!-- REVIEWS -->
+      <section id="reviews" aria-labelledby="reviews-heading">
+        <div class="container">
+          <header class="reviews-header">
+            <svg
+              class="reviews-google-icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <path
+                d="M21.8 12.23c0-.68-.06-1.33-.17-1.95H12v3.69h5.5a4.7 4.7 0 0 1-2.04 3.09v2.57h3.3c1.93-1.78 3.04-4.41 3.04-7.4Z"
+              />
+              <path
+                d="M12 22c2.76 0 5.08-.91 6.77-2.47l-3.3-2.57c-.91.61-2.08.98-3.47.98-2.66 0-4.91-1.8-5.72-4.21H2.88v2.65A10 10 0 0 0 12 22Z"
+              />
+              <path
+                d="M6.28 13.73A5.99 5.99 0 0 1 6 12c0-.6.1-1.18.28-1.73V7.62H2.88A10 10 0 0 0 2 12c0 1.61.38 3.13 1.06 4.38l3.22-2.65Z"
+              />
+              <path
+                d="M12 6.07c1.5 0 2.85.52 3.91 1.54l2.93-2.93C17.07 3.06 14.76 2 12 2A10 10 0 0 0 2.88 7.62l3.4 2.65C7.09 7.87 9.34 6.07 12 6.07Z"
+              />
+            </svg>
+            <h2 id="reviews-heading">What Our Customers Say</h2>
+            <div class="reviews-stars" aria-label="Five star rating">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <p>Based on 400+ Five-Star Reviews</p>
+          </header>
+
+          <ul class="reviews-list" aria-label="Customer reviews">
+            <li class="review-card">
+              <div class="reviews-stars" aria-label="Five star review">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="review-quote">
+                <p>
+                  “Great service every time. Best barber in Plymouth. The
+                  attention to detail is unmatched.”
+                </p>
+              </blockquote>
+              <div class="review-author">
+                <span class="review-author-badge" aria-hidden="true">M</span>
+                <span>Mark S.</span>
+              </div>
             </li>
-            <li>
-              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" focusable="false" aria-hidden="true" height="25" width="25">
-                <path d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"/>
-              </svg>
-              <a href="tel:">+phone number</a>
+
+            <li class="review-card">
+              <div class="reviews-stars" aria-label="Five star review">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="review-quote">
+                <p>
+                  “Always consistent and professional. I’ve been coming here for
+                  years and never left disappointed.”
+                </p>
+              </blockquote>
+              <div class="review-author">
+                <span class="review-author-badge" aria-hidden="true">D</span>
+                <span>David P.</span>
+              </div>
             </li>
-            <li>
-              <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" focusable="false" aria-hidden="true" height="25" width="25">
-                <path d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"/>
-              </svg>
-              United Kingdom
+
+            <li class="review-card">
+              <div class="reviews-stars" aria-label="Five star review">
+                <span aria-hidden="true">★★★★★</span>
+              </div>
+              <blockquote class="review-quote">
+                <p>
+                  “Sharp fade and attention to detail. The hot towel shave is an
+                  absolute must-try experience.”
+                </p>
+              </blockquote>
+              <div class="review-author">
+                <span class="review-author-badge" aria-hidden="true">T</span>
+                <span>Tom H.</span>
+              </div>
             </li>
           </ul>
+
+          <div class="reviews-button-wrap">
+            <a
+              href="https://www.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cta-button reviews-btn sweep-to-top"
+            >
+              Read More Reviews on Google
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOCATION -->
+      <section id="location" aria-labelledby="location-heading">
+        <div class="container">
+          <div class="location-card">
+            <div class="location-map-wrap">
+              <iframe
+                class="location-map"
+                title="Map showing the location of Class Barber at 38 North Hill, Plymouth"
+                src="https://www.google.com/maps?q=38%20North%20Hill%2C%20Plymouth%20PL4%208ET&z=15&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen
+              ></iframe>
+
+              <div class="location-map-label" aria-hidden="true">
+                <svg
+                  class="icon icon-small"
+                  viewBox="0 0 24 24"
+                  focusable="false"
+                >
+                  <path
+                    d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"
+                  />
+                </svg>
+                <span>38 North Hill, Plymouth</span>
+              </div>
+            </div>
+
+            <div class="location-content">
+              <header class="location-header">
+                <h2 id="location-heading">Visit Class Barber</h2>
+              </header>
+
+              <ul class="location-info-list">
+                <li class="location-info-item">
+                  <div class="location-icon-circle" aria-hidden="true">
+                    <svg
+                      class="icon icon-small"
+                      viewBox="0 0 24 24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5Z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="location-info-text">
+                    <h3>Location</h3>
+                    <address class="location-address">
+                      38 North Hill<br />
+                      Plymouth<br />
+                      PL4 8ET
+                    </address>
+                  </div>
+                </li>
+
+                <li class="location-info-item">
+                  <div class="location-icon-circle" aria-hidden="true">
+                    <svg
+                      class="icon icon-small"
+                      viewBox="0 0 24 24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 1.75A10.25 10.25 0 1 0 22.25 12 10.26 10.26 0 0 0 12 1.75Zm0 18.5a8.25 8.25 0 1 1 8.25-8.25A8.26 8.26 0 0 1 12 20.25Zm1-13.5h-2v6l5 3 .99-1.64L13 11.69Z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="location-info-text">
+                    <h3>Open 7 Days a Week</h3>
+
+                    <dl class="location-hours">
+                      <div>
+                        <dt>Mon – Thu:</dt>
+                        <dd>9am – 6pm</dd>
+                      </div>
+                      <div>
+                        <dt>Friday:</dt>
+                        <dd>9am – 6:30pm</dd>
+                      </div>
+                      <div>
+                        <dt>Saturday:</dt>
+                        <dd>9am – 5pm</dd>
+                      </div>
+                      <div>
+                        <dt>Sunday:</dt>
+                        <dd>9:30am – 4pm</dd>
+                      </div>
+                    </dl>
+                  </div>
+                </li>
+
+                <li class="location-info-item">
+                  <div class="location-icon-circle" aria-hidden="true">
+                    <svg
+                      class="icon icon-small"
+                      viewBox="0 0 24 24"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 2a5 5 0 0 0-5 5v1.17A3 3 0 0 0 5 11v6a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-6a3 3 0 0 0-2-2.83V7a5 5 0 0 0-5-5Zm-3 6V7a3 3 0 1 1 6 0v1Zm3 3a1.25 1.25 0 1 1-1.25 1.25A1.25 1.25 0 0 1 12 11Z"
+                      />
+                    </svg>
+                  </div>
+
+                  <div class="location-info-text">
+                    <h3>Good to Know</h3>
+                    <p>Walk-ins only. No booking required.</p>
+                  </div>
+                </li>
+              </ul>
+
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=38+North+Hill,+Plymouth,+PL4+8ET"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cta-button main-btn location-btn"
+              >
+                Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer1 Components Start -->
+    <!-- footer1 Components Start -->
+    <footer id="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer1-brand">
+          <h2 class="footer1-logo">Company Logo</h2>
+          <p class="footer1-description">company slogan</p>
+        </div>
+
+        <div class="footer1-columns">
+          <div class="footer1-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/pricing/">Pricing</a></li>
+              <li><a href="/about/">About</a></li>
+              <li><a href="/portfolio/">Portfolio</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer1-links">
+            Column for other company specific things such as location maps
+          </div>
+
+          <div class="footer1-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  focusable="false"
+                  aria-hidden="true"
+                  height="25"
+                  width="25"
+                >
+                  <path
+                    d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"
+                  />
+                </svg>
+                <a href="mailto:">hello@company.co.uk</a>
+              </li>
+              <li>
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  focusable="false"
+                  aria-hidden="true"
+                  height="25"
+                  width="25"
+                >
+                  <path
+                    d="M224.2 89C216.3 70.1 195.7 60.1 176.1 65.4L170.6 66.9C106 84.5 50.8 147.1 66.9 223.3C104 398.3 241.7 536 416.7 573.1C493 589.3 555.5 534 573.1 469.4L574.6 463.9C580 444.2 569.9 423.6 551.1 415.8L453.8 375.3C437.3 368.4 418.2 373.2 406.8 387.1L368.2 434.3C297.9 399.4 241.3 341 208.8 269.3L253 233.3C266.9 222 271.6 202.9 264.8 186.3L224.2 89z"
+                  />
+                </svg>
+                <a href="tel:">+phone number</a>
+              </li>
+              <li>
+                <svg
+                  class="icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 640"
+                  focusable="false"
+                  aria-hidden="true"
+                  height="25"
+                  width="25"
+                >
+                  <path
+                    d="M128 252.6C128 148.4 214 64 320 64C426 64 512 148.4 512 252.6C512 371.9 391.8 514.9 341.6 569.4C329.8 582.2 310.1 582.2 298.3 569.4C248.1 514.9 127.9 371.9 127.9 252.6zM320 320C355.3 320 384 291.3 384 256C384 220.7 355.3 192 320 192C284.7 192 256 220.7 256 256C256 291.3 284.7 320 320 320z"
+                  />
+                </svg>
+                United Kingdom
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer1-bottom">
+          <p class="footer1-copy">
+            © 2025 Company Name. All rights reserved.
+            <a
+              href="https://builtbysemdev.com"
+              class="brand-accent built-by-link"
+            >
+              This website was designed & BuiltBySemDev.
+            </a>
+          </p>
+          <div class="footer1-socials">
+            <a href="#" aria-label="go to Company Instagram account">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                focusable="false"
+                height="25"
+                width="25"
+              >
+                <path
+                  d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="go to Company LinkedIn account">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                focusable="false"
+                height="25"
+                width="25"
+              >
+                <path
+                  d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="go to Company YouTube account">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                focusable="false"
+                height="25"
+                width="25"
+              >
+                <path
+                  d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="go to Company x account">
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                focusable="false"
+                height="25"
+                width="25"
+              >
+                <path
+                  d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM457.1 180L353.3 298.6L475.4 460L379.8 460L305 362.1L219.3 460L171.8 460L282.8 333.1L165.7 180L263.7 180L331.4 269.5L409.6 180L457.1 180zM419.3 431.6L249.4 206.9L221.1 206.9L392.9 431.6L419.3 431.6z"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
+    </footer>
+    <!-- footer1 Components End -->
+    <!-- footer1 Components End -->
 
-      <div class="footer1-bottom">
-        <p class="footer1-copy">© 2025 Company Name. All rights reserved. 
-          <a href="https://builtbysemdev.com" class="brand-accent built-by-link">
-            This website was designed & BuiltBySemDev.
-          </a>
-        </p>
-        <div class="footer1-socials">
-          <a href="#" aria-label="go to Company Instagram account">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" focusable="false" height="25" width="25">
-              <path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"/></svg>
-          </a>
-          <a href="#" aria-label="go to Company LinkedIn account">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" focusable="false" height="25" width="25">
-              <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z"/></svg>
-          </a>
-          <a href="#" aria-label="go to Company YouTube account">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" focusable="false" height="25" width="25">
-              <path d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"/></svg>
-          </a>
-          <a href="#" aria-label="go to Company x account">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" focusable="false" height="25" width="25">
-              <path d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM457.1 180L353.3 298.6L475.4 460L379.8 460L305 362.1L219.3 460L171.8 460L282.8 333.1L165.7 180L263.7 180L331.4 269.5L409.6 180L457.1 180zM419.3 431.6L249.4 206.9L221.1 206.9L392.9 431.6L419.3 431.6z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer1 Components End -->
-  <!-- footer1 Components End -->
-
-  <script src="/assets/js/global.js" defer></script>
-</body>
+    <script src="/assets/js/global.js" defer></script>
+  </body>
 </html>
