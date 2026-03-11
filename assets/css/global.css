@@ -98,7 +98,7 @@ section {
 }
 
 .container {
-  max-width: var(--maxW);
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -114,12 +114,12 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(4rem, 6vw, 5rem);
+  font-size: clamp(3.2rem, 6vw, 5rem);
   line-height: 1.2em;
 }
 
 h2 {
-  font-size: clamp(3rem, 5vw, 4rem);
+  font-size: clamp(2.2rem, 5vw, 4rem);
   line-height: 1.2em;
 }
 
@@ -652,6 +652,40 @@ footer a {
 .footer1-socials a:hover {
   color: var(--mainBrandColour);
   transition: color 0.3s;
+}
+
+.location-card {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.12);
+  padding: clamp(1.5rem, 3vw, 2rem);
+  display: grid;
+  gap: var(--spaceLg);
+}
+
+.location-map-wrap {
+  position: relative;
+}
+
+#site-footer .location-map {
+  width: 100%;
+  height: 100%;
+  min-height: 20rem;
+  border: 0;
+  display: block;
+}
+
+.location-map-label {
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #fff;
+  color: var(--textColour2);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.12);
+  font-weight: 600;
 }
 /* footer1 Component Styles End */
 /* footer1 Component Styles End */
