@@ -169,8 +169,8 @@
 .why-choose-us-media::after {
   content: "";
   position: absolute;
-  right: -1rem;
-  bottom: -1rem;
+  right: -0.5rem;
+  bottom: -0.5rem;
   width: 120px;
   height: 120px;
   background: var(--mainBrandColour);
@@ -247,7 +247,7 @@
 
 @media (max-width: 700px) {
   .why-choose-us-review {
-    left: 0;
+    display: none;
   }
 
   .why-choose-us-content {
@@ -736,10 +736,12 @@
 
 .location-hours dd {
   margin: 0;
+  font-weight: 600;
+  opacity: 0.9;
 }
 
 .location-btn {
-  margin-top: var(--spaceSmmd);
+  margin-top: var(--spaceMd);
   width: fit-content;
   box-shadow: 0 0.5rem 1rem rgba(198, 40, 40, 0.2);
 }
@@ -759,9 +761,19 @@
   .location-map-label {
     margin-top: 1rem;
   }
+}
+
+@media screen and (max-width: 426px) {
+  .location-card {
+    padding: 1rem;
+  }
+
+  .location-btn {
+    width: 100%;
+    text-align: center;
+  }
 
   .location-hours div {
-    grid-template-columns: 1fr;
-    gap: 0.15rem;
+    gap: 0.5rem;
   }
 }
