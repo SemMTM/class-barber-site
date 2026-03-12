@@ -5,6 +5,7 @@
   const navToggle = document.querySelector(".nav1-toggle");
   const navHeader = document.querySelector("#nav1-navigation");
   const overlay = document.getElementById("nav-overlay");
+  const navLink = document.getElementsByClassName(".nav-link");
 
   if (navHeader) {
     const onScroll = () => {
@@ -20,6 +21,7 @@
     navHeader.classList.remove("nav1-active");
     body.classList.remove("nav1-open");
     navToggle.setAttribute("aria-expanded", "false");
+    overlay.classList.remove("active");
   };
 
   // Main Aria Nav Toggle

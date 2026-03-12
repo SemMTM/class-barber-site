@@ -11,6 +11,7 @@
 
 #hero1 .container {
   width: 100%;
+  padding-top: 20px;
 }
 
 /* Hero image */
@@ -538,7 +539,7 @@
 
 /* REVIEWS */
 #reviews {
-  background: #050505;
+  background: var(--bgColour2);
   color: var(--textColour1);
 }
 

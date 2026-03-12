@@ -299,35 +299,23 @@ h3 {
 }
 
 .class-barber-logo__class {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: 1rem;
   letter-spacing: 0.22em;
 }
 
 .class-barber-logo__bottom {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: 2rem;
   letter-spacing: 0.18em;
 }
 
 .class-barber-logo__line {
-  width: clamp(2.8rem, 8vw, 5.5rem);
+  width: 2.8rem;
   height: 0.22rem;
   background: var(--logo-red);
   position: relative;
   display: inline-block;
   border-radius: 999px;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
-}
-
-.class-barber-logo__line::before,
-.class-barber-logo__line::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 0.55rem;
-  height: 1px;
-  background: var(--logo-white);
-  opacity: 0.65;
-  transform: translateY(-50%);
 }
 
 .class-barber-logo__line::before {
@@ -587,7 +575,7 @@ h3 {
     box-sizing: border-box;
     padding-bottom: 1rem;
     left: 0;
-    top: 58px;
+    top: 70px;
   }
 
   .nav1-ul {
@@ -630,6 +618,10 @@ h3 {
   padding: 2.5rem 1rem;
   margin: 0 auto;
   background-color: var(--bgColour2);
+}
+
+.footer1-brand {
+  margin-bottom: var(--spaceSm);
 }
 
 .footer1-logo {
@@ -687,11 +679,6 @@ h3 {
   width: 20px;
 }
 
-.footer1-socials .icon:hover {
-  fill: #6fddff;
-  transition: fill 0.5s;
-}
-
 footer a {
   color: var(--textColour1);
   text-decoration: none;
@@ -718,19 +705,24 @@ footer a {
   color: var(--textColour1);
 }
 
-.footer1-socials a {
-  margin-left: 1rem;
-  font-size: 1rem;
-  transition: color 0.3s;
+.footer-socials a {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
 }
 
-.footer1-socials a:first-child {
-  margin-left: 0;
+.footer-socials .icon {
+  height: 30px;
+  width: 30px;
 }
 
-.footer1-socials a:hover {
-  color: var(--mainBrandColour);
-  transition: color 0.3s;
+.footer-socials svg {
+  fill: var(--textColour1);
+  transition: fill 0.3s;
+}
+
+.footer-socials svg:hover {
+  fill: var(--mainBrandColour);
+  transition: fill 0.3s;
 }
 
 .location-card {
