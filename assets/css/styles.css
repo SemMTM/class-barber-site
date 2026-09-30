@@ -307,7 +307,7 @@ p {
   display: flex;
   align-items: flex-end;
   overflow: hidden;
-  padding-block: clamp(3rem, 10vw, 9rem) 2rem;
+  padding-block: clamp(3rem, 7vw, 5rem) 2rem;
   background: var(--color-ink);
   color: var(--color-white);
 }
@@ -344,7 +344,6 @@ p {
 }
 
 .hero h1 {
-  max-width: 10ch;
   margin-bottom: 1.6rem;
   font-size: var(--heading-1);
 }
