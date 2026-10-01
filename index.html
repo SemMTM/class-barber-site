@@ -8,13 +8,25 @@
       name="robots"
       content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
-    <title>Men's Haircuts &amp; Skin Fades in Plymouth | Class Barber</title>
+    <title>Class Barber | Men's Haircuts &amp; Skin Fades in Plymouth</title>
     <meta
       name="description"
       content="Men's haircuts, skin fades, beard grooming and kids' cuts at Class Barber on North Hill, Plymouth. Walk-ins welcome seven days a week."
     />
     <link rel="canonical" href="https://classbarberuk.com/" />
-    <link rel="icon" href="assets/images/cb-favicon.png" type="image/png" />
+    <link
+      rel="icon"
+      href="assets/images/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="assets/images/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png" />
     <link
       rel="preload"
       href="assets/fonts/geist-variable.woff2"
@@ -24,15 +36,17 @@
     />
     <link
       rel="preload"
-      href="assets/images/class-barber-interior.webp"
+      href="assets/images/class-barber-interior-1360.webp"
       as="image"
       type="image/webp"
+      imagesrcset="assets/images/class-barber-interior-640.webp 640w, assets/images/class-barber-interior-960.webp 960w, assets/images/class-barber-interior-1120.webp 1120w, assets/images/class-barber-interior-1360.webp 1360w"
+      imagesizes="100vw"
       fetchpriority="high"
     />
-    <link rel="preload" href="assets/css/styles.css?v=3" as="style" />
-    <link rel="stylesheet" href="assets/css/styles.css?v=3" />
-    <link rel="preload" href="assets/css/root.css?v=2" as="style" />
-    <link rel="stylesheet" href="assets/css/root.css?v=2" />
+    <link rel="preload" href="assets/css/root.css" as="style" />
+    <link rel="preload" href="assets/css/styles.css" as="style" />
+    <link rel="stylesheet" href="assets/css/root.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -229,7 +243,14 @@
         <section class="hero" aria-labelledby="hero-title">
           <img
             class="hero-background"
-            src="assets/images/class-barber-interior.webp"
+            src="assets/images/class-barber-interior-1360.webp"
+            srcset="
+              assets/images/class-barber-interior-640.webp   640w,
+              assets/images/class-barber-interior-960.webp   960w,
+              assets/images/class-barber-interior-1120.webp 1120w,
+              assets/images/class-barber-interior-1360.webp 1360w
+            "
+            sizes="100vw"
             alt=""
             width="1360"
             height="1020"
@@ -291,7 +312,12 @@
             <ul class="services-grid">
               <li class="service-card service-card--lead motion-image">
                 <img
-                  src="assets/images/class-barber-skinfade1.webp"
+                  src="assets/images/class-barber-skinfade1-400.webp"
+                  srcset="
+                    assets/images/class-barber-skinfade1-320.webp 320w,
+                    assets/images/class-barber-skinfade1-400.webp 400w
+                  "
+                  sizes="(min-width: 68rem) 38vw, (min-width: 48rem) 60vw, 100vw"
                   alt="Side view of a precise skin fade by Class Barber"
                   width="340"
                   height="366"
@@ -336,7 +362,12 @@
               </li>
               <li class="service-card service-card--wide motion-image">
                 <img
-                  src="assets/images/class-barber-hot-towel.webp"
+                  src="assets/images/class-barber-hot-towel-400.webp"
+                  srcset="
+                    assets/images/class-barber-hot-towel-320.webp 320w,
+                    assets/images/class-barber-hot-towel-400.webp 400w
+                  "
+                  sizes="(min-width: 68rem) 36vw, (min-width: 48rem) 60vw, 100vw"
                   alt="Client receiving a traditional hot towel shave"
                   width="340"
                   height="366"
@@ -381,7 +412,13 @@
           <div class="container proof-layout">
             <figure class="proof-media motion-image">
               <img
-                src="assets/images/class-barber-skinfade.webp"
+                src="assets/images/class-barber-skinfade-800.webp"
+                srcset="
+                  assets/images/class-barber-skinfade-400.webp 400w,
+                  assets/images/class-barber-skinfade-640.webp 640w,
+                  assets/images/class-barber-skinfade-800.webp 800w
+                "
+                sizes="(min-width: 68rem) 46vw, 100vw"
                 alt="Detailed skin fade and hair design completed at Class Barber"
                 width="547"
                 height="547"
@@ -391,7 +428,7 @@
             </figure>
 
             <div class="proof-content">
-              <p class="eyebrow brand-accent">A Plymouth favourite</p>
+              <p class="eyebrow">A Plymouth favourite</p>
               <h2 id="proof-title">Trusted for a reason.</h2>
               <p class="proof-lead">
                 For over 15 years, Class Barber has built its reputation one cut
@@ -458,6 +495,7 @@
                   alt="Taper fade and beard trim by Class Barber"
                   width="340"
                   height="366"
+                  loading="lazy"
                   decoding="async"
                 />
               </li>
@@ -467,33 +505,54 @@
                   alt="Hair and beard taper completed at Class Barber"
                   width="340"
                   height="366"
+                  loading="lazy"
                   decoding="async"
                 />
               </li>
               <li class="cut-gallery-item">
                 <img
-                  src="assets/images/class-barber-high-fade.webp"
+                  src="assets/images/class-barber-high-fade-600.webp"
+                  srcset="
+                    assets/images/class-barber-high-fade-320.webp 320w,
+                    assets/images/class-barber-high-fade-480.webp 480w,
+                    assets/images/class-barber-high-fade-600.webp 600w
+                  "
+                  sizes="(min-width: 48rem) 32vw, 50vw"
                   alt="High fade by Class Barber"
                   width="340"
                   height="366"
+                  loading="lazy"
                   decoding="async"
                 />
               </li>
               <li class="cut-gallery-item">
                 <img
-                  src="assets/images/class-barber-skin-fade.webp"
+                  src="assets/images/class-barber-skin-fade-400.webp"
+                  srcset="
+                    assets/images/class-barber-skin-fade-320.webp 320w,
+                    assets/images/class-barber-skin-fade-400.webp 400w
+                  "
+                  sizes="(min-width: 48rem) 38vw, 50vw"
                   alt="Burst fade with detailed line work by Class Barber"
                   width="340"
                   height="366"
+                  loading="lazy"
                   decoding="async"
                 />
               </li>
               <li class="cut-gallery-item">
                 <img
-                  src="assets/images/class-barber-a-hair-design.webp"
+                  src="assets/images/class-barber-a-hair-design-900.webp"
+                  srcset="
+                    assets/images/class-barber-a-hair-design-320.webp 320w,
+                    assets/images/class-barber-a-hair-design-600.webp 600w,
+                    assets/images/class-barber-a-hair-design-900.webp 900w
+                  "
+                  sizes="(min-width: 48rem) 32vw, 50vw"
                   alt="Letter A hair design by Class Barber"
                   width="340"
                   height="366"
+                  loading="lazy"
                   decoding="async"
                 />
               </li>
